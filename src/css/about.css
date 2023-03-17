@@ -1,3 +1,4 @@
+/* ABOUT - SECTION HOW IT’S MADE? */
 /* Body Root */
 .about-section {
     --about-bg-color-item: rgba(76, 76, 76, 1);
@@ -7,23 +8,23 @@
 .about-section>.container {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--background-color);
-    background-color: rgb(240, 172, 172);
-    outline: 1px dotted rgb(0, 58, 91);
+    /* background-color: rgb(240, 172, 172); */
+    /* outline: 1px dotted rgb(0, 58, 91); */
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .about-section>.container {
         background-color: rgb(225, 225, 79);
         outline: 1px dotted black;
     }
-}
+} */
 
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
     .about-section>.container {
         background-color: rgb(206, 254, 206);
         outline: 1px dotted rgb(255, 10, 10);
     }
-}
+} */
 
 .about-title {
     text-align: center;
@@ -118,7 +119,6 @@
     margin-bottom: 18px;
 }
 
-/* -----------  768 */
 @media screen and (min-width: 768px) {
 
     .about-section {
@@ -147,7 +147,8 @@
 
     .about-list-box {
         padding: 32px 32px;
-        /* background-color: var(--background-color); */
+        background-color: var(--background-color);
+        border-radius: 0;
     }
 
     .about-list-title {
@@ -160,7 +161,6 @@
     }
 }
 
-/* -----------  1200 */
 @media screen and (min-width: 1200px) {
 
     .about-section {
@@ -185,7 +185,6 @@
     }
 
     .about-list-title {
-        /* padding-right: 102px; */
         max-width: 350px;
     }
 
