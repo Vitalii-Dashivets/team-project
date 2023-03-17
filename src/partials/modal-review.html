@@ -14,32 +14,40 @@
 
     <div class="form-review-contacts">
       <input
+        lang="ukr"
+        class="form-input-contacts"
         type="text"
         name="name"
-        id="name"
         placeholder="Name"
-        class="form-input-contacts"
-        autocomplete="off"
+        pattern="[a-z]{3,16}"
+        title="Surname 3-20 characters"
+        minlength="3"
+        maxlength="20"
+        required
       />
 
       <input
+        id="email"
+        class="form-input-contacts"
         type="email"
         name="email"
-        id="email"
+        required
+        minlength="6"
+        maxlength="50"
         placeholder="Enter your email"
-        class="form-input-contacts"
-        autocomplete="off"
+        pattern="[^@\s]+@[^@\s]+"
+        title="Invalid email address"
       />
 
       <span class="form-phone">
         <input
+          class="form-input-contacts"
           type="tel"
           name="phone"
           id="phone"
           pattern="[0-9]{9}"
           placeholder="Phone number"
-          class="form-input-contacts"
-          autocomplete="off"
+          title="Nine digits code"
           required
           maxlength="9"
         />
@@ -56,7 +64,7 @@
         <textarea
           name="comment"
           id="comment"
-          placeholder="Text input"
+          placeholder="Enter text"
           class="textarea-comments"
         ></textarea>
       </div>
