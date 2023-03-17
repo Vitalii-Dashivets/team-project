@@ -25,7 +25,7 @@
     }
 }
 
-.about-section .about-title {
+.about-title {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -46,14 +46,14 @@
     margin-bottom: 32px;
 }
 
+.about-title>span {
+    color: var(--accent-color, #FD9222)
+}
+
 .about-content-flex {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-}
-
-.about-title>span {
-    color: var(--accent-color, #FD9222)
 }
 
 .about-video-box {
@@ -125,8 +125,18 @@
         padding-bottom: 92px;
     }
 
+    .about-section>.container {
+        max-width: 614px;
+        padding-left: 77px;
+        padding-right: 77px;
+    }
+
     .about-title {
         margin-bottom: 50px;
+
+        font-size: 24px;
+        line-height: calc(28 / 24);
+        letter-spacing: -0.03em;
     }
 
     .about-video-box {
@@ -143,36 +153,12 @@
 
     .about-list-title {
         margin-bottom: 28px;
-        /* font-weight: 600; */
-        /* font-size: 18px; */
-        /* line-height: calc(24 / 18); */
-        /* color: var(--text-dark-color, #111111); */
     }
 
     .about-item {
-        /* padding-left: 16px; */
-        /* font-weight: 400; */
-        /* font-size: 14px; */
-        /* line-height: calc(18 / 14); */
-        /* letter-spacing: -0.02em; */
+        padding-left: 16px;
+        padding-right: 70px;
     }
-
-    .about-item::before {
-        /* content: ""; */
-        /* position: absolute; */
-        /* top: 5px; */
-        /* left: 0px; */
-        /* width: 8px; */
-        /* height: 8px; */
-        /* border-radius: 50%; */
-        /* background-color: var(--about-bg-color-item, #4C4C4C); */
-        /* border: 1px solid #ECEDED; */
-    }
-
-    .about-item:not(:last-child) {
-        /* margin-bottom: 18px; */
-    }
-
 }
 
 /* -----------  1200 */
@@ -180,6 +166,12 @@
 
     .about-section {
         padding-bottom: 100px;
+    }
+
+    .about-title {
+        /* font-size: 24px; */
+        /* line-height: calc(28 / 24); */
+        /* letter-spacing: -0.03em; */
     }
 
     .about-video-box {
