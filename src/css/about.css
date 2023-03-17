@@ -126,7 +126,7 @@
     }
 
     .about-section>.container {
-        max-width: 614px;
+        /* max-width: 768px; */
         padding-left: 77px;
         padding-right: 77px;
     }
