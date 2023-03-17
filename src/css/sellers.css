@@ -88,3 +88,7 @@
   color: #ffffff;
   text-align: center;
 }
+.sellers-button:is(:hover, :focus) {
+  color: var(--accent-color);
+  background-color: var(--btn-hover-color);
+}
