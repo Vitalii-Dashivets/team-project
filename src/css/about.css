@@ -156,7 +156,7 @@
 
     .about-item {
         /* padding-right: 70px; */
-        min-width: 464px;
+        max-width: 480px;
     }
 }
 
