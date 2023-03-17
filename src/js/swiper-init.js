@@ -5,5 +5,6 @@
           renderBullet: function (index, className) {
             return '<span class="' + className + '">'  + "</span>";
           },
-        },
+    },
+    slidesPerView:'auto',
       });

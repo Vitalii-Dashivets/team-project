@@ -20,10 +20,12 @@
 .modal.active {
   opacity: 1;
   scale: 1;
+  pointer-events: visiblePainted;
 }
 .overlay.active {
   opacity: 1;
   visibility: visible;
+  pointer-events: all;
 }
 
 .modal {
@@ -32,7 +34,7 @@
   opacity: 0;
 }
 .modal_buy {
-  z-index: 10000;
+  z-index: 100;
   width: calc(100% - 32px);
   max-width: 311px;
   min-height: 1007px;
