@@ -1,0 +1,122 @@
+:root {
+  --scrl-btn-background-clr: rgb(255, 255, 255);
+}
+/* -----Hero-mobile----- */
+
+.hero {
+  padding-top: 395px;
+  padding-bottom: 21px;
+}
+
+.background {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 621px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background-image: url('/img/hero-mob@1x-min.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .background {
+    background-image: url('/img/hero-mob@2x-min.jpg');
+  }
+}
+
+.hero-main-title {
+  width: 290px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  letter-spacing: -0.03em;
+  color: var(--text-white-color);
+}
+
+.hero-text {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.03em;
+  color: var(--text-white-color);
+}
+
+.hero-info-btn {
+  display: block;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 27px;
+  padding-right: 27px;
+  margin-left: 14px;
+  color: var(--text-white-color);
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+  transition: background-color var(--transition-speed);
+}
+
+.hero-order-btn {
+  display: block;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 27px;
+  padding-right: 27px;
+  color: var(--text-white-color);
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 100px;
+  transition: background-color var(--transition-speed);
+}
+
+.scroll-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  margin-left: 12px;
+  border-radius: 50%;
+  background-color: var(--scrl-btn-background-clr);
+}
+
+.hero-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 32px;
+}
+
+@media screen and (min-width: 310px) and (max-width: 374px) {
+  .hero-info-btn {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+
+  .hero-order-btn {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+
+  .hero {
+    padding-top: 369px;
+  }
+}
