@@ -50,7 +50,7 @@
     color: var(--accent-color, #FD9222)
 }
 
-.about-content-flex {
+.about-content-wrap {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -126,7 +126,7 @@
     }
 
     .about-section>.container {
-        /* max-width: 768px; */
+        /* max-width: 614px; */
         padding-left: 77px;
         padding-right: 77px;
     }
@@ -141,9 +141,8 @@
 
     .about-video-box {
         max-width: 614px;
-        padding-bottom: 65.14%;
-        /* height: 0px; */
         /* max-height: 400px; */
+        padding-bottom: 65.14%;
     }
 
     .about-list-box {
@@ -176,9 +175,8 @@
 
     .about-video-box {
         max-width: 600px;
-        padding-bottom: 66.67%;
-        /* height: 0px; */
         /* max-height: 400px; */
+        padding-bottom: 66.67%;
     }
 
     .about-list-box {
