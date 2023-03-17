@@ -1,0 +1,73 @@
+<!-- ------------------MODAL WINDOW-------------------------- -->
+<div class="overlay js-overlay-modal"></div>
+<div class="modal_review modal" data-modal="3">
+  <button class="modal-close-button js-modal-close" type="button">
+    <svg class="modal-close-icon" width="12" height="12">
+      <use href="../img/icons.svg#x"></use>
+    </svg>
+  </button>
+
+  <form class="form-review">
+    <b class="form-review-title"
+      >leave a review about <span> our chocolate</span></b
+    >
+
+    <div class="form-review-contacts">
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Name"
+        class="form-input-contacts"
+        autocomplete="off"
+      />
+
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email"
+        class="form-input-contacts"
+        autocomplete="off"
+      />
+
+      <span class="form-phone">
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          pattern="[0-9]{9}"
+          placeholder="Phone number"
+          class="form-input-contacts"
+          autocomplete="off"
+          required
+          maxlength="9"
+        />
+        <b>
+          <svg class="phone-flag">
+            <use href="../img/icons.svg#flag"></use>
+          </svg>
+          <span class="phone-code">+380</span>
+        </b>
+      </span>
+
+      <div class="form-field-comments">
+        <!-- <label for="comment" class="form-label-comments">Comment</label> -->
+        <textarea
+          name="comment"
+          id="comment"
+          placeholder="Text input"
+          class="textarea-comments"
+        ></textarea>
+      </div>
+    </div>
+
+    <button type="submit" class="form-send-btn js-open-modal" data-modal="4">
+      Send
+    </button>
+  </form>
+</div>
+
+<button class="open-review js-open-modal" type="button" data-modal="3">
+  Open Review Modal New
+</button>
