@@ -174,9 +174,9 @@
 
     .about-video-box {
         max-width: 600px;
-        height: 400px;
         /* max-height: 400px; */
         /* padding-bottom: 66.67%; */
+        padding-bottom: 35.2%;
     }
 
     .about-list-box {
