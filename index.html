@@ -15,7 +15,7 @@
     />
     
     <script type="module" crossorigin src="/team-project/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/team-project/assets/index-0e188d4f.css">
+    <link rel="stylesheet" href="/team-project/assets/index-90e52df7.css">
   </head>
   <body>
     
@@ -390,33 +390,89 @@
     <ul class="swiper-wrapper modal-buy-list">
       <li class="swiper-slide modal-buy-item">
         <div class="modal-buy-card">
-          <img
-            srcset="../img/modal-mob-1@1x.png 1x, ../img/modal-mob-1@2x.png 2x"
-            src="../img/modal-mob-1@1x.png"
-            alt="Скибки шоколаду"
-          />
-
+          <div class="modal-buy-thumb">
+            <picture>
+              <source
+                srcset="
+                  ../img/modal-tab-1@1x.png 1x,
+                  ../img/modal-tab-1@2x.png 2x
+                "
+                media="(min-width: 768px)"
+                width="120"
+              />
+              <source
+                srcset="
+                  ../img/modal-mob-1@1x.png 1x,
+                  ../img/modal-mob-1@2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="../img/modal-mob-1@1x.png"
+                alt="Скибки шоколаду"
+                width="167"
+              />
+            </picture>
+          </div>
           <span class="modal-weight">100 g</span>
         </div>
       </li>
       <li class="swiper-slide modal-buy-item">
         <div class="modal-buy-card">
-          <img
-            srcset="../img/modal-mob-2@1x.png 1x, ../img/modal-mob-2@2x.png 2x"
-            src="../img/modal-mob-2@1x.png"
-            alt="Скибки чорного і білого шоколаду з горіхами"
-          />
+          <div class="modal-buy-thumb">
+            <picture>
+              <source
+                srcset="
+                  ../img/modal-tab-2@1x.png 1x,
+                  ../img/modal-tab-2@2x.png 2x
+                "
+                media="(min-width: 768px)"
+                width="120"
+              />
+              <source
+                srcset="
+                  ../img/modal-mob-2@1x.png 1x,
+                  ../img/modal-mob-2@2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="../img/modal-mob-2@1x.png"
+                alt="Скибки чорного і білого шоколаду"
+                width="167"
+              />
+            </picture>
+          </div>
 
           <span class="modal-weight">200 g</span>
         </div>
       </li>
       <li class="swiper-slide modal-buy-item">
         <div class="modal-buy-card">
-          <img
-            srcset="../img/modal-mob-3@1x.png 1x, ../img/modal-mob-3@2x.png 2x"
-            src="../img/modal-mob-3@1x.png"
-            alt="Дві плитки чорного шоколаду"
-          />
+          <div class="modal-buy-thumb">
+            <picture>
+              <source
+                srcset="
+                  ../img/modal-tab-3@1x.png 1x,
+                  ../img/modal-tab-3@2x.png 2x
+                "
+                media="(min-width: 768px)"
+                width="120"
+              />
+              <source
+                srcset="
+                  ../img/modal-mob-3@1x.png 1x,
+                  ../img/modal-mob-3@2x.png 2x
+                "
+                media="(max-width: 767px)"
+              />
+              <img
+                src="../img/modal-mob-3@1x.png"
+                alt="Дві плитки чорного шоколаду"
+                width="167"
+              />
+            </picture>
+          </div>
 
           <span class="modal-weight">300 g</span>
         </div>
@@ -428,33 +484,32 @@
     <label for="Name" class="modal-buy-label">
       <span>Personal information</span>
     </label>
+    <span class="modal-buy-name">
+      <input
+        id="Name"
+        class="modal-buy-input"
+        type="text"
+        placeholder="Name"
+        pattern="[a-z]{3,16}"
+        title="Surname 3-20 characters"
+        minlength="3"
+        maxlength="20"
+        required
+      />
 
-    <input
-      lang="ukr"
-      id="Name"
-      class="modal-buy-input"
-      type="text"
-      placeholder="Name"
-      pattern="[a-z]{3,16}"
-      title="Surname 3-20 characters"
-      minlength="3"
-      maxlength="20"
-      required
-    />
-
-    <label for="Surname" class="modal-buy-label"></label>
-    <input
-      id="Surname"
-      class="modal-buy-input"
-      type="text"
-      placeholder="Surname"
-      pattern="[a-z]{3,16}"
-      title="Surname 3-20 characters"
-      minlength="3"
-      maxlength="20"
-      required
-    />
-
+      <!-- <label for="Surname" class="modal-buy-label"></label> -->
+      <input
+        id="Surname"
+        class="modal-buy-input"
+        type="text"
+        placeholder="Surname"
+        pattern="[a-z]{3,16}"
+        title="Surname 3-20 characters"
+        minlength="3"
+        maxlength="20"
+        required
+      />
+    </span>
     <label for="mail" class="modal-buy-label"><span>Email</span></label>
     <input
       id="mail"
