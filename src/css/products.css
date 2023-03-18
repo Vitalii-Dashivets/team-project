@@ -30,8 +30,7 @@
 /* PRODUCT */
 .product-container {
     background-color: var(--background-color);
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 72px;
 }
 
 .product-title {
