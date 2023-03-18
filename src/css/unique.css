@@ -52,8 +52,8 @@
 }
 
 .unique-desc-bl-first-btn:hover {
-  background: #fcf1e0;
-  color: rgba(253, 146, 34, 1);
+  background: var(--btn-hover-color);
+  color: var(--accent-color);
 }
 
 .unique-desc-bl-second-btn {
@@ -63,8 +63,8 @@
   align-items: center;
   padding: 6px 16px;
   gap: 4px;
-  background: #fafafa;
-  border: 1px solid #fd9222;
+  background: var(--text-white-color);
+  border: 1px solid var(--accent-color);
   border-radius: 35px;
   font-size: 10px;
   line-height: calc(12 / 10);
@@ -148,7 +148,7 @@
   min-width: 100%;
   min-height: 100%;
   transform: translatey(100%);
-  background-color: rgba(255, 255, 255, 1);
+  background-color: var(--text-white-color);
   padding: 28px;
   border-radius: 15px;
   transition: transform var(--transition-speed);
