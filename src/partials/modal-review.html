@@ -1,15 +1,13 @@
-<div class="overlay js-overlay-modal"></div>
-<div class="modal_reviews modal" data-modal="4">
-  <button class="modal-close-button js-modal-close" type="button">
+<div class="modal-reviews modal" data-modal="3">
+  <button class="modal-close-btn js-modal-close" type="button">
     <svg class="modal-close-icon" width="12" height="12">
       <use href="../img/icons.svg#x"></use>
     </svg>
   </button>
-  <p class="modal-buy-title">leave a review about <span>our chocolate</span></p>
-  <form name="signup_form" autocomplete="on">
+  <p class="modal-reviews-title">leave a review <br> about <span>our chocolate</span></p>
+  <form name="form-reviews" autocomplete="on">
     <input
-      id="Name"
-      class="modal-buy-input"
+      class="modal-reviews-input"
       type="text"
       placeholder="Name"
       pattern="[a-z]{3,16}"
@@ -19,8 +17,7 @@
       required
     />
     <input
-      id="mail"
-      class="modal-buy-input"
+      class="modal-reviews-input"
       type="email"
       required
       minlength="6"
@@ -29,9 +26,9 @@
       pattern="[^@\s]+@[^@\s]+"
       title="Invalid email address"
     />
-    <span class="modal-buy-box">
+    <span class="modal-reviews-box">
       <input
-        class="modal-buy-input"
+        class="modal-reviews-input"
         type="tel"
         pattern="[0-9]{9}"
         placeholder="Phone number"
@@ -40,17 +37,18 @@
         maxlength="9"
       />
       <b>
-        <svg class="modal-buy-flag" width="24" height="24">
+        <svg class="modal-reviews-flag" width="24" height="24">
           <use href="../img/icons.svg#flag"></use>
         </svg>
-        <span class="modal-buy-code">+380</span>
+        <span class="modal-reviews-code">+380</span>
       </b>
     </span>
     <textarea
-      class="modal-buy-textarea"
+      class="modal-reviews-textarea"
       name="comment"
       placeholder="Enter text"
     ></textarea>
-    <button class="modal-buy-submit js-open-modal" type="submit">Send</button>
+    <button class="modal-reviews-submit" type="submit">Send</button>
   </form>
 </div>
+<div class="overlay js-overlay-modal"></div>
