@@ -1,3 +1,45 @@
+.swiper-wrapper {
+  padding: 0;
+  border-radius: 15px;
+  margin-bottom: 0;
+}
+.swiper {
+  margin-bottom: 13px;
+}
+.swiper-pagination {
+  padding: 0;
+}
+.swiper-slide {
+  background: #fff;
+  border-radius: 15px;
+}
+
+.swiper-pagination-bullet {
+  display: inline-block;
+
+  width: 13px;
+  height: 13px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: var(--bullet-color);
+}
+@media screen and (min-width: 768px) {
+  .swiper-pagination-bullet {
+    display: none;
+  }
+}
+.swiper-pagination-bullet {
+  margin: 0px var(--swiper-pagination-bullet-horizontal-gap);
+}
+.swiper-pagination-bullet-active {
+  width: 28px;
+  border-radius: 6.5px;
+  color: #fff;
+  background: var(--accent-color);
+}
 /* --------------MODAL-BUY--------------- */
 /* --------------MODAL-BUY--------------- */
 /* --------------MODAL-BUY--------------- */
@@ -44,6 +86,13 @@
   border-radius: 15px;
   background-color: var(--background-color);
 }
+@media screen and (min-width: 768px) {
+  .modal_buy {
+    max-width: 609px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
 
 .modal-close-icon {
   width: 24px;
@@ -83,13 +132,26 @@
   border-radius: 15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.modal-buy-card img {
+@media screen and (min-width: 768px) {
+  .modal-buy-card {
+    width: 160px;
+    max-height: 196px;
+  }
+}
+.modal-buy-thumb {
   display: block;
   width: 167px;
   height: 148px;
   margin-bottom: 16px;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
+@media screen and (min-width: 768px) {
+  .modal-buy-thumb {
+    width: 120px;
+    height: 107px;
+  }
+}
+
 .modal-buy-title {
   margin-bottom: 32px;
   font-family: 'Montserrat', sans-serif;
@@ -156,9 +218,22 @@
 .modal-buy-label:first-child + .modal-buy-input {
   margin-bottom: 14px;
 }
+@media screen and (min-width: 768px) {
+  .modal-buy-name {
+    display: flex;
+    /* flex-basis: 246px; */
+    column-gap: 21px;
+  }
+  .modal-buy-name.input {
+    display: block;
+    /* width: 100%; */
+  }
+}
 .modal-buy-label {
   position: relative;
   padding: 0;
+  display: inline-block;
+  width: 100%;
 }
 
 .modal-buy-label span {

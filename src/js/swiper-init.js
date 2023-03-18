@@ -7,4 +7,5 @@
           },
     },
     slidesPerView:'auto',
-      });
+  });
+     
