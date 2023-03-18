@@ -47,17 +47,16 @@ body {
     padding-right: 32px;
   }
 }
+
+/* Swiper */
 .swiper-wrapper {
-  padding: 0;
   border-radius: 15px;
-  margin-bottom: 0;
 }
-.swiper {
-  margin-bottom: 13px;
-}
+
 .swiper-pagination {
-  padding: 0;
+  position: static;
 }
+
 .swiper-slide {
   background: #fff;
   border-radius: 15px;
@@ -65,7 +64,6 @@ body {
 
 .swiper-pagination-bullet {
   display: inline-block;
-
   width: 13px;
   height: 13px;
   text-align: center;
@@ -75,9 +73,11 @@ body {
   opacity: 1;
   background: var(--bullet-color);
 }
+
 .swiper-pagination-bullet {
   margin: 0px var(--swiper-pagination-bullet-horizontal-gap);
 }
+
 .swiper-pagination-bullet-active {
   width: 28px;
   border-radius: 6.5px;

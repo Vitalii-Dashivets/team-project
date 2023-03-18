@@ -1,6 +1,13 @@
 .modal_buy .swiper {
   margin-bottom: 13px;
 }
+
+@media screen and (min-width: 768px) {
+  .modal_buy .swiper-pagination-bullet {
+    display: none;
+  }
+}
+
 /* --------------MODAL-BUY--------------- */
 /* --------------MODAL-BUY--------------- */
 /* --------------MODAL-BUY--------------- */
