@@ -5,6 +5,6 @@ var swiper = new Swiper(".swiper", {
     renderBullet: function (index, className) {
       return '<span class="' + className + '">' + "</span>";
     },
-  },
-  slidesPerView: 'auto'
-});
+    slidesPerView:'auto',
+  });
+     
