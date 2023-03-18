@@ -15,7 +15,7 @@
     />
     
     <script type="module" crossorigin src="/team-project/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/team-project/assets/index-111c5639.css">
+    <link rel="stylesheet" href="/team-project/assets/index-383cf8fb.css">
   </head>
   <body>
     
@@ -858,11 +858,7 @@
   </form>
 </div>
 
-    <button class="open-thanks js-open-modal" type="button" data-modal="2">
-  Open Review Modal New
-</button>
-
-<div class="overlay js-overlay-modal"></div>
+    <div class="overlay js-overlay-modal"></div>
 <div class="modal_thanks modal" data-modal="2">
   <button class="thanks-close-button js-modal-close" type="button">
     <svg class="thanks-close-icon">
@@ -896,66 +892,83 @@
 </div>
 
     <div class="overlay js-overlay-modal"></div>
-<div class="modal_reviews modal" data-modal="4">
+<div class="modal_review modal" data-modal="3">
   <button class="modal-close-button js-modal-close" type="button">
     <svg class="modal-close-icon" width="12" height="12">
       <use href="../img/icons.svg#x"></use>
     </svg>
   </button>
-  <p class="modal-buy-title">leave a review about <span>our chocolate</span></p>
-  <form name="signup_form" autocomplete="on">
-    <input
-      id="Name"
-      class="modal-buy-input"
-      type="text"
-      placeholder="Name"
-      pattern="[a-z]{3,16}"
-      title="Surname 3-20 characters"
-      minlength="3"
-      maxlength="20"
-      required
-    />
-    <input
-      id="mail"
-      class="modal-buy-input"
-      type="email"
-      required
-      minlength="6"
-      maxlength="50"
-      placeholder="Enter your email"
-      pattern="[^@\s]+@[^@\s]+"
-      title="Invalid email address"
-    />
-    <span class="modal-buy-box">
+
+  <form class="form-review">
+    <b class="form-review-title"
+      >leave a review about <span> our chocolate</span></b
+    >
+
+    <div class="form-review-contacts">
       <input
-        class="modal-buy-input"
-        type="tel"
-        pattern="[0-9]{9}"
-        placeholder="Phone number"
-        title="Nine digits code"
+        lang="ukr"
+        class="form-input-contacts"
+        type="text"
+        name="name"
+        placeholder="Name"
+        pattern="[a-z]{3,16}"
+        title="Surname 3-20 characters"
+        minlength="3"
+        maxlength="20"
         required
-        maxlength="9"
       />
-      <b>
-        <svg class="modal-buy-flag" width="24" height="24">
-          <use href="../img/icons.svg#flag"></use>
-        </svg>
-        <span class="modal-buy-code">+380</span>
-      </b>
-    </span>
-    <textarea
-      class="modal-buy-textarea"
-      name="comment"
-      placeholder="Enter text"
-    ></textarea>
-    <button class="modal-buy-submit js-open-modal" type="submit">Send</button>
+
+      <input
+        id="email"
+        class="form-input-contacts"
+        type="email"
+        name="email"
+        required
+        minlength="6"
+        maxlength="50"
+        placeholder="Enter your email"
+        pattern="[^@\s]+@[^@\s]+"
+        title="Invalid email address"
+      />
+
+      <span class="form-phone">
+        <input
+          class="form-input-contacts"
+          type="tel"
+          name="phone"
+          id="phone"
+          pattern="[0-9]{9}"
+          placeholder="Phone number"
+          title="Nine digits code"
+          required
+          maxlength="9"
+        />
+        <b>
+          <svg class="phone-flag">
+            <use href="../img/icons.svg#flag"></use>
+          </svg>
+          <span class="phone-code">+380</span>
+        </b>
+      </span>
+
+      <div class="form-field-comments">
+        <!-- <label for="comment" class="form-label-comments">Comment</label> -->
+        <textarea
+          name="comment"
+          id="comment"
+          placeholder="Enter text"
+          class="textarea-comments"
+        ></textarea>
+      </div>
+    </div>
+
+    <button type="submit" class="form-send-btn js-open-modal" data-modal="4">
+      Send
+    </button>
   </form>
 </div>
-    <button class="open-feed js-open-modal" type="button" data-modal="4">
-  Open Review Modal New
-</button>
 
-<div class="overlay js-overlay-modal"></div>
+    <div class="overlay js-overlay-modal"></div>
 <div class="modal_feed modal" data-modal="4">
   <button class="feed-close-button js-modal-close" type="button">
     <svg class="feed-close-icon" width="16" height="16">
