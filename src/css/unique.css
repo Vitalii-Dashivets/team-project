@@ -109,6 +109,7 @@ max-height: 146px;
   padding: 28px 55px 71px 56px;
   position: relative;
   overflow: hidden;
+  transition: border-color var(--transition-speed);
 }
 
 .unique-img {
@@ -160,10 +161,13 @@ max-height: 146px;
   transform: translatex(0);
 }
 
+.unique-item:hover {
+  border-color: transparent;
+}
+
 @media screen and (min-width: 768px) {
   .unique-items {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     row-gap: 32px;
     column-gap: 32px;
@@ -191,6 +195,24 @@ max-height: 146px;
 
   .unique-text {
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .unique-item:nth-child(1) {
+    order: 1;
+  }
+  
+  .unique-item:nth-child(2) {
+    order: 3;
+  }
+  
+  .unique-item:nth-child(3) {
+    order: 4;
+  }
+  
+  .unique-item:nth-child(4) {
+    order: 2;
   }
 }
 
