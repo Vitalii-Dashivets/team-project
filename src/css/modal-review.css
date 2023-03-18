@@ -41,7 +41,7 @@
   border-radius: 15px;
 }
 
-/* .modal-close-button {
+.modal-close-button {
   background-color: inherit;
   border: none;
   margin-left: auto;
@@ -52,7 +52,7 @@
   top: 14px;
   right: 14px;
   cursor: pointer;
-} */
+}
 
 .modal-close-icon {
   stroke: var(--text-dark-color);
