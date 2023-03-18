@@ -1,5 +1,5 @@
 /* -----------------------------MODAL WINDOW--------------------------------------- */
-/* .overlay {
+.overlay {
   position: fixed;
   opacity: 0;
   visibility: hidden;
@@ -11,8 +11,8 @@
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms linear, viibility 250ms linear;
   overflow-y: auto;
-} */
-/* .modal.active {
+}
+.modal.active {
   opacity: 1;
   scale: 1;
 }
@@ -25,7 +25,7 @@
   transition: scale 500ms linear, opacity 500ms linear;
   scale: 0.4;
   opacity: 0;
-} */
+}
 .modal_review {
   position: absolute;
   z-index: 800;
