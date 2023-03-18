@@ -23,6 +23,9 @@ html {
 *::after {
   box-sizing: inherit;
 }
+body {
+  background-color: var(--background-color);
+}
 .container {
   max-width: 375px;
   padding-left: 20px;
