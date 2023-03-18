@@ -60,7 +60,6 @@
 
 .subscribe-title {
   margin: 0 18px 24px 18px;
-
   font-weight: 600;
   font-size: 20px;
   line-height: calc(24 / 20);
@@ -69,16 +68,29 @@
   color: var(--text-white-color);
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe-title {
+    margin: 0 163px 24px 163px;
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+}
+
 .subscribe-text {
   margin: 0 5px 24px 5px;
-  margin-bottom: 24px;
   font-size: 14px;
   line-height: calc(18 / 14);
   letter-spacing: -0.02em;
   color: var(--text-white-color);
 }
 
-.subscribe-button {
+@media screen and (min-width: 768px) {
+  .subscribe-text {
+    margin: 0 118px 24px 118px;
+  }
+}
+
+.subscribe-btn {
   padding: 12px 28px;
   min-width: 128px;
   min-height: 41px;
@@ -95,8 +107,18 @@
     background-color var(--transition-speed);
 }
 
-.subscribe-button:focus,
-.subscribe-button:hover {
+@media screen and (min-width: 768px) {
+  .subscribe-btn {
+    padding: 14px 40px;
+    min-width: 172px;
+    min-height: 50px;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
+}
+
+.subscribe-btn:focus,
+.subscribe-btn:hover {
   color: var(--accent-color);
   background-color: var(--btn-hover-color);
 }
