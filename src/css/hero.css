@@ -8,12 +8,14 @@
   padding-bottom: 21px;
 }
 
+.hero-container {
+  padding-bottom: 71px;
+}
+
 .background {
   padding-left: 20px;
   padding-right: 20px;
   height: 621px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
   border-radius: 30px;
   background-image: url('/img/hero-mob@1x-min.jpg');
   background-size: cover;
@@ -42,7 +44,7 @@
   font-family: 'Montserrat';
   font-weight: 500;
   font-size: 12px;
-  line-height: 14px;
+  line-height: calc(14 / 12);
   letter-spacing: -0.03em;
   color: var(--text-white-color);
 }
@@ -55,9 +57,9 @@
   line-height: calc(17 / 14);
   padding-top: 11px;
   padding-bottom: 11px;
-  padding-left: 27px;
-  padding-right: 27px;
-  margin-left: 14px;
+  padding-left: 28px;
+  padding-right: 28px;
+  margin-left: 12px;
   color: var(--text-white-color);
   background-color: transparent;
   border: 1px solid #ffffff;
@@ -94,6 +96,11 @@
   background-color: var(--scrl-btn-background-clr);
 }
 
+.scroll-btn-icon {
+  width: 16px;
+  height: 16px;
+}
+
 .hero-wrap {
   display: flex;
   align-items: center;
@@ -118,5 +125,68 @@
 
   .hero {
     padding-top: 369px;
+  }
+}
+
+/* -----Hero-tablet----- */
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 671px;
+    padding-bottom: 40px;
+  }
+
+  .background {
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 890px;
+    background-image: url('/img/hero-tab@1x-min.jpg');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .background {
+      background-image: url('/img/hero-tab@2x-min.jpg');
+    }
+  }
+
+  .hero-main-title {
+    width: 484px;
+    height: 102px;
+    font-size: 28px;
+    line-height: calc(34 / 28);
+  }
+
+  .hero-text {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    margin-left: 151px;
+  }
+
+  .hero-info-btn {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 14px;
+  }
+
+  .hero-order-btn {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .scroll-btn {
+    width: 38px;
+    height: 38px;
+    margin-left: 14px;
+  }
+
+  .scroll-btn-icon {
+    width: 22px;
+    height: 22px;
   }
 }
