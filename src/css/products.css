@@ -6,26 +6,26 @@
     position: static;
 }
 
-.swiper-wrapper {
+/* .swiper-wrapper {
     padding: 0;
     border-radius: 15px;
     margin-bottom: 0px;
-}
+} */
 
-.swiper-slide {
-    background: var(--background-color);
+/* .swiper-slide {
+    background: var(--text-white-color);
     border-radius: 15px;
-}
+} */
 
-.swiper-pagination{
-        margin-top: 20px;
+/* .swiper-pagination-product{
+        margin-top: 0px;
 }
 
 @media screen and (min-width: 768px){
-    .swiper-pagination{
-        margin-top: 32px;
+    .swiper-pagination-product{
+        margin-top: 2px;
     }
-}
+} */
 
 /* PRODUCT */
 .product-container {

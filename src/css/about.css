@@ -1,10 +1,5 @@
 /* ABOUT - SECTION HOW IT’S MADE? */
 /* Body Root */
-.about-section {
-    --about-bg-color-item: rgba(76, 76, 76, 1);
-    --background-light-color: rgba(255, 255, 255, 1);
-}
-
 .about-section>.container {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--background-color);
