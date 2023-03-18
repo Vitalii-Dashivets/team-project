@@ -77,11 +77,15 @@
   text-transform: uppercase;
   color: var(--text-dark-color);
   margin-bottom: 32px;
-  text-align: center;
+  text-align: left;
 }
-.form-review-title span {
+.leave-span {
+  display: block;
+}
+.choko-span {
   color: var(--accent-color);
 }
+
 .form-review-contacts {
   display: flex;
   flex-direction: column;
@@ -212,7 +216,6 @@
 
 @media screen and (min-width: 768px) {
   .modal_review {
-    /* width: 100%; */
     max-width: 512px;
   }
 
@@ -226,8 +229,9 @@
     padding: 40px;
   }
   .form-review-title {
+    font-size: 24px;
+    line-height: 1.17;
     margin-bottom: 40px;
-    width: 296px;
     text-align: left;
   }
   .form-review-contacts {
