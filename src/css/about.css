@@ -8,23 +8,7 @@
 .about-section>.container {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--background-color);
-    /* background-color: rgb(240, 172, 172); */
-    /* outline: 1px dotted rgb(0, 58, 91); */
 }
-
-/* @media screen and (min-width: 768px) {
-    .about-section>.container {
-        background-color: rgb(225, 225, 79);
-        outline: 1px dotted black;
-    }
-} */
-
-/* @media screen and (min-width: 1200px) {
-    .about-section>.container {
-        background-color: rgb(206, 254, 206);
-        outline: 1px dotted rgb(255, 10, 10);
-    }
-} */
 
 .about-title {
     text-align: center;
