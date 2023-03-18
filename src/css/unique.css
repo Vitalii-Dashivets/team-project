@@ -109,7 +109,7 @@ max-height: 146px;
   padding: 28px 55px 71px 56px;
   position: relative;
   overflow: hidden;
-  transition: border-color var(--transition-speed);
+  transition: border-color var(--transition-speed), background-color var(--transition-speed);
 }
 
 .unique-img {
@@ -163,6 +163,7 @@ max-height: 146px;
 
 .unique-item:hover {
   border-color: transparent;
+background-color: transparent;
 }
 
 @media screen and (min-width: 768px) {
