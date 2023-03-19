@@ -1,9 +1,9 @@
-.modal_buy .swiper {
+.modal .swiper {
   margin-bottom: 13px;
 }
 
 @media screen and (min-width: 768px) {
-  .modal_buy .swiper-pagination-bullet {
+  .modal .swiper-pagination-bullet {
     display: none;
   }
 }
@@ -12,7 +12,21 @@
 /* --------------MODAL-BUY--------------- */
 /* --------------MODAL-BUY--------------- */
 /* --------------MODAL-BUY--------------- */
-
+@media screen and (max-width: 767px) {
+  .modal {
+    top: 80%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    top: 70%;
+  }
+}
 .modal-close-icon {
   width: 24px;
   height: 24px;
