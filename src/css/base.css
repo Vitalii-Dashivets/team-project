@@ -84,46 +84,32 @@ body {
   color: #fff;
   background: var(--accent-color);
 }
-
 .overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+  top: 0px;
+  left: 0px;
   width: 100%;
   height: 100%;
-  overflow-y: auto;
-  background-color: rgb(46 47 66 / 40%);
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity var(--transition-speed);
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 1000ms linear;
 
-  pointer-events: none;
+  overflow-y: auto;
 }
 
-/* .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 30;
-  width: calc(100% - 32px);
-  max-width: 312px;
-  min-height: auto;
-
-  text-align: center;
-  background-color: var(--background-color);
-  border-radius: 15px;
-  box-shadow: 0 3px 10px -0.5px rgb(0 0 0 / 20%);
-  transform: translate(-50%, -50%);
-  visibility: hidden;
-  opacity: 0;
-  transition: scale var(--transition-speed), opacity var(--transition-speed);
-  scale: 0.4;
-} */
-
-/* .modal.active,
-.overlay.active {
-  scale: 1;
-  visibility: visible;
+.modal.active {
   opacity: 1;
-} */
+  scale: 1;
+}
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  transition: scale 500ms linear, opacity 500ms linear;
+  scale: 0.4;
+  opacity: 0;
+}
