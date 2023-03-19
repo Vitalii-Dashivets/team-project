@@ -84,3 +84,44 @@ body {
   color: #fff;
   background: var(--accent-color);
 }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: rgb(46 47 66 / 40%);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity var(--transition-speed);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 30;
+  width: calc(100% - 32px);
+  max-width: 312px;
+  min-height: auto;
+  padding: 32px 24px;
+  text-align: center;
+  background-color: var(--background-color);
+  border-radius: 15px;
+  box-shadow: 0 3px 10px -0.5px rgb(0 0 0 / 20%);
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  transition: scale var(--transition-speed), opacity var(--transition-speed);
+  scale: 0.4;
+}
+
+.modal.active,
+.overlay.active {
+  scale: 1;
+  visibility: visible;
+  opacity: 1;
+}
