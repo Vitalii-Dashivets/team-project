@@ -23,6 +23,7 @@
 }
 
 .advantages-svg {
+    display: inline-block;
     padding: 15px;
     margin-bottom: 22px;
     border: 1px solid rgba(255, 255, 255, 0.5);
