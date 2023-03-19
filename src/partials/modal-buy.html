@@ -14,21 +14,21 @@
             <picture>
               <source
                 srcset="
-                  ../img/modal-tab-1@1x.png 1x,
-                  ../img/modal-tab-1@2x.png 2x
+                  ./img/modal-tab-1@1x.png 1x,
+                  ./img/modal-tab-1@2x.png 2x
                 "
                 media="(min-width: 768px)"
                 width="120"
               />
               <source
                 srcset="
-                  ../img/modal-mob-1@1x.png 1x,
-                  ../img/modal-mob-1@2x.png 2x
+                  ./img/modal-mob-1@1x.png 1x,
+                  ./img/modal-mob-1@2x.png 2x
                 "
                 media="(max-width: 767px)"
               />
               <img
-                src="../img/modal-mob-1@1x.png"
+                src="./img/modal-mob-1@1x.png"
                 alt="Скибки шоколаду"
                 width="167"
               />
@@ -43,21 +43,21 @@
             <picture>
               <source
                 srcset="
-                  ../img/modal-tab-2@1x.png 1x,
-                  ../img/modal-tab-2@2x.png 2x
+                  ./img/modal-tab-2@1x.png 1x,
+                  ./img/modal-tab-2@2x.png 2x
                 "
                 media="(min-width: 768px)"
                 width="120"
               />
               <source
                 srcset="
-                  ../img/modal-mob-2@1x.png 1x,
-                  ../img/modal-mob-2@2x.png 2x
+                  ./img/modal-mob-2@1x.png 1x,
+                  ./img/modal-mob-2@2x.png 2x
                 "
                 media="(max-width: 767px)"
               />
               <img
-                src="../img/modal-mob-2@1x.png"
+                src="./img/modal-mob-2@1x.png"
                 alt="Скибки чорного і білого шоколаду"
                 width="167"
               />
@@ -73,21 +73,21 @@
             <picture>
               <source
                 srcset="
-                  ../img/modal-tab-3@1x.png 1x,
-                  ../img/modal-tab-3@2x.png 2x
+                  ./img/modal-tab-3@1x.png 1x,
+                  ./img/modal-tab-3@2x.png 2x
                 "
                 media="(min-width: 768px)"
                 width="120"
               />
               <source
                 srcset="
-                  ../img/modal-mob-3@1x.png 1x,
-                  ../img/modal-mob-3@2x.png 2x
+                  ./img/modal-mob-3@1x.png 1x,
+                  ./img/modal-mob-3@2x.png 2x
                 "
                 media="(max-width: 767px)"
               />
               <img
-                src="../img/modal-mob-3@1x.png"
+                src="./img/modal-mob-3@1x.png"
                 alt="Дві плитки чорного шоколаду"
                 width="167"
               />
@@ -158,7 +158,7 @@
       />
       <b>
         <svg class="modal-buy-flag" width="24" height="24">
-          <use href="../img/icons.svg#flag"></use>
+          <use href="./img/icons.svg#flag"></use>
         </svg>
         <span class="modal-buy-code">+380</span>
       </b>
@@ -178,7 +178,7 @@
         required
       />
       <svg class="modal-buy-bank-icon" width="32" height="21">
-        <use href="../img/icons.svg#mastercard"></use>
+        <use href="./img/icons.svg#mastercard"></use>
       </svg>
     </span>
     <label for="comment" class="modal-buy-label">
@@ -191,7 +191,11 @@
       ></textarea>
     </label>
 
-    <button class="modal-buy-submit js-open-modal" type="submit" data-modal="2">
+    <button
+      class="modal-buy-submit js-open-modal js-modal-close"
+      type="submit"
+      data-modal="2"
+    >
       Submit
     </button>
   </form>
