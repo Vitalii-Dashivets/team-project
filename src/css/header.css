@@ -50,7 +50,11 @@
 .header-social-icon {
     width: 24px;
     height: 24px;
-    fill: var(--text-dark-color);
+    stroke: var(--text-dark-color);
+    fill: transparent;
+}
+.header-social-link:is(:hover,:focus) .header-social-icon {
+    stroke: var(--accent-color);
 }
   /* ------------------------MENU------------------ */
   .header-menu {
@@ -109,6 +113,7 @@
   }
   .header-menu-social-icon {
     stroke: var(--text-white-color);
+    
   }
   .header-button-humburger,.header-menu-button {
     width: 28px;
