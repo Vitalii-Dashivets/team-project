@@ -101,7 +101,7 @@ body {
   pointer-events: none;
 }
 
-.modal {
+/* .modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -119,11 +119,11 @@ body {
   opacity: 0;
   transition: scale var(--transition-speed), opacity var(--transition-speed);
   scale: 0.4;
-}
+} */
 
-.modal.active,
+/* .modal.active,
 .overlay.active {
   scale: 1;
   visibility: visible;
   opacity: 1;
-}
+} */
