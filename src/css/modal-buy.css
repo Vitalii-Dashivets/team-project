@@ -1,9 +1,9 @@
-.modal_buy .swiper {
+.modal .swiper {
   margin-bottom: 13px;
 }
 
 @media screen and (min-width: 768px) {
-  .modal_buy .swiper-pagination-bullet {
+  .modal .swiper-pagination-bullet {
     display: none;
   }
 }
@@ -12,7 +12,7 @@
 /* --------------MODAL-BUY--------------- */
 /* --------------MODAL-BUY--------------- */
 /* --------------MODAL-BUY--------------- */
-.overlay {
+/* .overlay {
   position: fixed;
   opacity: 0;
   visibility: hidden;
@@ -40,27 +40,27 @@
   transition: scale 500ms linear, opacity 500ms linear;
   scale: 0.4;
   opacity: 0;
-}
-.modal_buy {
-  z-index: 13;
+} */
+.modal-buy {
+  z-index: 22;
   width: calc(100% - 32px);
   max-width: 311px;
   min-height: 1007px;
   position: absolute;
   top: 5%;
   left: 50%;
+  opacity: 0;
   padding: 32px 24px;
   translate: -50% 0%;
   border-radius: 15px;
   background-color: var(--background-color);
 }
 @media screen and (min-width: 768px) {
-  .modal_buy {
+  .modal-buy {
     max-width: 609px;
     padding: 48px;
   }
 }
-
 .modal-close-icon {
   width: 24px;
   height: 24px;
@@ -203,9 +203,16 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.22;
-
+  letter-spacing: -0.02em;
   transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .modal-buy-input {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
 .modal-buy-input::placeholder {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -214,6 +221,12 @@
   line-height: 1.22;
   color: var(--placeholder-color);
   vertical-align: middle;
+}
+@media screen and (min-width: 768px) {
+  .modal-buy-input::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
 .modal-buy-input:not(:placeholder-shown):invalid {
   border-color: red;
